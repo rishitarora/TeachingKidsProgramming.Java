@@ -6,15 +6,6 @@ import org.junit.Test;
 
 public class Homework02
 {
-  //  'How to do homework:
-  //  'Step 1: Press the Run Button
-  //            PC: Ctrl+F11 
-  //            Mac: Command+fn+F11
-  //  'Step 2: Read the name of the Method (Sub) that Failed
-  //  'Step 3: Fill in the blank (___) to make it pass
-  //  'Step 4: Repeat Until Enlightenment
-  //  ' Do not change anything except the blank (___)
-  //
   @Test
   public void youCanReadVariables() throws Exception
   {
