@@ -1,10 +1,13 @@
 package org.teachingkidsprogramming.recipes;
 
+import org.teachingextensions.logo.Tortoise;
+
 public class PentagonCrazy
 {
   public static void main(String[] args)
   {
     //    Make the tortoise move as fast as possible --#3
+    Tortoise.setSpeed(10);
     //    createColorPalette (recipe below) --#8
     //    ------------- Recipe for createColorPalette --#8
     //    Add steel blue to the color wheel --#7
@@ -23,9 +26,13 @@ public class PentagonCrazy
     //        If the tortoises pen width is greater than 4, then --#17
     //            Reset it to 1 --#16
     //        ------------- End of adjustPen recipe 
-    //        Move the tortoise the length of a side --#4
-    //        Turn the tortoise 1/5th of 360 degrees --#1
-    //        Turn the tortoise 1 more degree --#5
+    //        Move the tortoise the length of a side --#4 
+    for (int i = 1; i <= 200; i++)
+    {
+      Tortoise.turn(360 / 5);
+      Tortoise.move(50);
+      Tortoise.turn(1);
+    }
     //    Repeat
     //    ------------- End of drawPentagon recipe
   }
